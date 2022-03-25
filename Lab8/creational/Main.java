@@ -21,9 +21,11 @@ public class Main {
 //        }
 
 //         Expected usage
-        BookMetadataExporter exporter = new CSVBookMetadataExporter();
+        BookMetadataExporter exporter = new JSONBookMetadataExporter();
         exporter.add(TestData.sailboatBook);
         exporter.add(TestData.GoFBook);
+        exporter.add(TestData.dragonBook);
+        exporter.add(TestData.dinosaurBook);
         exporter.export(System.out);
     }
 }
