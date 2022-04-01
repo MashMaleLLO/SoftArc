@@ -1,9 +1,9 @@
 package structural;
 
 public class TaxPayingHealthcareWorker extends HealthcareWorkerDecorator{
-    public TaxPayingHealthcareWorker(HealthcareWorker worker) {
-        super(worker);
-        System.out.println("Decorate " + worker.getName() + " with TaxPaying.");
+    public TaxPayingHealthcareWorker(HealthcareWorker member) {
+        super(member);
+        System.out.println("Decorate " + member.getName() + " with TaxPaying.");
     }
 
     @Override
